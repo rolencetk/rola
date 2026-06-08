@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimalist Glassmorphism Design</title>
+    <title>Minimalist Responsive Design</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="upload-container">
+        <label for="image-picker" class="upload-btn">
+            📷 تغيير الصورة الخلفية
+        </label>
+        <input type="file" id="image-picker" accept="image/*" style="display: none;">
+    </div>
+
     <div class="container">
+        <div class="custom-bg-image" id="bg-preview"></div>
+        
         <div class="pink-sphere"></div>
 
-        <div class="glass-panel">
+        <div class="glass-panel" id="glassPanel">
             <div class="top-date">
                 <h1>Jan</h1>
                 <h2>2025</h2>
@@ -30,7 +39,7 @@
             </div>
         </div>
 
-        <div class="right-content">
+        <div class="right-content" id="rightContent">
             <div class="headline">
                 <p>Minimalism style</p>
                 <p>Typography</p>
@@ -45,6 +54,7 @@
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
 
